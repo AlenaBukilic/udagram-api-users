@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: udagram-api-users
+  labels:
+    app: udagram-api-users
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: udagram-api-users
+  template:
+    metadata:
+      labels:
+        app: udagram-api-users
+    spec:
+      containers:
+      - name: udagram-api-users
+        image: alenabukilicpersonal/udagram-api-users
+        ports:
+        - containerPort: 8080
+        env:
+          - name: POSTGRES_USERNAME
+            value: ""
+          - name: POSTGRES_PASSWORD
+            value: ""
+          - name: POSTGRES_DB
+            value: ""
+          - name: POSTGRES_HOST
+            value: ""
+          - name: AWS_REGION
+            value: ""
+          - name: AWS_PROFILE
+            value: ""
+          - name: AWS_BUCKET
+            value: ""
+          - name: JWT_SECRET
+            value: ""
+          - name: PORT
+            value: ""
