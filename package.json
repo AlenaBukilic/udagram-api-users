@@ -28,8 +28,8 @@
     "jsonwebtoken": "^8.5.1",
     "pg": "^8.5.1",
     "reflect-metadata": "^0.1.13",
-    "sequelize": "^5.10.0",
-    "sequelize-typescript": "^0.6.11"
+    "sequelize": "^5.3.0",
+    "sequelize-typescript": "^0.6.10"
   },
   "devDependencies": {
     "@types/bluebird": "^3.5.27",
@@ -43,6 +43,6 @@
     "mocha": "^6.1.4",
     "ts-node-dev": "^1.0.0-pre.40",
     "tslint": "^5.18.0",
-    "typescript": "^3.5.3"
+    "typescript": "^3.4.3"
   }
 }

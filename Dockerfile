@@ -1,8 +1,7 @@
 # Use NodeJS base image
-FROM node:13.14.0
+FROM node:13
 
 # Create app directory
-RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # Install app dependencies by copying
@@ -19,4 +18,4 @@ COPY . .
 EXPOSE 8080
 
 # Define the Docker image's behavior at runtime
-CMD ["npm", "run", "prod"]
+CMD ["npm", "run", "dev"]
